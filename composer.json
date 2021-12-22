@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Appzcoder\\CrudGenerator\\CrudGeneratorServiceProvider"
+                "Klongchu\\CrudGenerator\\CrudGeneratorServiceProvider"
             ]
         }
     }
