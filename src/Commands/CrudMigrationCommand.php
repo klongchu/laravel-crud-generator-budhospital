@@ -233,8 +233,9 @@ class CrudMigrationCommand extends GeneratorCommand
 
         $schemaUp =
             "Schema::create('" . $tableName . "', function (Blueprint \$table) {
-            \$table->id('" . $primaryKey . "');\n" . $tabIndent . $tabIndent . $tabIndent . $schemaFields .
-            "\$table->timestamps();\n".
+            \$table->id('" . $primaryKey . "');\n" . $tabIndent . $tabIndent . $tabIndent . 
+            $schemaFields .
+            "\$table->timestamps();\n". $tabIndent . $tabIndent . $tabIndent . 
             $softDeletesSnippets .
         "});";
 
