@@ -1,14 +1,14 @@
 ## Installation
 
-To get started, you should add the `Klongchu/crud-generator` Composer dependency to your project:
+To get started, you should add the `appzcoder/crud-generator` Composer dependency to your project:
 ```
-composer require Klongchu/crud-generator --dev
+composer require appzcoder/crud-generator --dev
 ```
-Once the package is installed, you should register the `Klongchu\CrudGenerator\CrudGeneratorServiceProvider` service provider. Normally, Laravel 5.5+ will register the service provider automatically.
+Once the package is installed, you should register the `Appzcoder\CrudGenerator\CrudGeneratorServiceProvider` service provider. Normally, Laravel 5.5+ will register the service provider automatically.
 
 After that, publish its assets using the `vendor:publish` Artisan command:
 ```
-php artisan vendor:publish --provider="Klongchu\CrudGenerator\CrudGeneratorServiceProvider"
+php artisan vendor:publish --provider="Appzcoder\CrudGenerator\CrudGeneratorServiceProvider"
 ```
 
 ### Laravel older 5.5
@@ -19,7 +19,7 @@ If you're using an older verson of Laravel (<5.5) then just manually add the pro
 public function register()
 {
     if ($this->app->environment() == 'local') {
-        $this->app->register('Klongchu\CrudGenerator\CrudGeneratorServiceProvider');
+        $this->app->register('Appzcoder\CrudGenerator\CrudGeneratorServiceProvider');
     }
 }
 ```
