@@ -228,7 +228,7 @@ class CrudMigrationCommand extends GeneratorCommand
 
         $softDeletesSnippets = '';
         if ($softDeletes == 'yes') {
-            $softDeletesSnippets = "\$table->softDeletes();\n" . $tabIndent . $tabIndent . $tabIndent;
+            $softDeletesSnippets = "\$table->softDeletes();\n" . $tabIndent . $tabIndent;
         }
 
         $schemaUp =
